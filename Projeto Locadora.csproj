@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8083C4D3-BE6E-4B15-9DB7-5DA99AD7F2A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projeto_Locadora</RootNamespace>
+    <AssemblyName>Projeto Locadora</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAutomovel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutomovel.Designer.cs">
+      <DependentUpon>FrmAutomovel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutomovel_Regs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutomovel_Regs.Designer.cs">
+      <DependentUpon>FrmAutomovel_Regs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCargo_Regs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo_Regs.Designer.cs">
+      <DependentUpon>FrmCargo_Regs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCliente_Regs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCliente_Regs.Designer.cs">
+      <DependentUpon>FrmCliente_Regs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFuncionario.Designer.cs">
+      <DependentUpon>FrmFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFuncionario_Regs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFuncionario_Regs.Designer.cs">
+      <DependentUpon>FrmFuncionario_Regs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLocacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLocacao.Designer.cs">
+      <DependentUpon>FrmLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLocacao_Regs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLocacao_Regs.Designer.cs">
+      <DependentUpon>FrmLocacao_Regs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMarca.Designer.cs">
+      <DependentUpon>FrmMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMarca_Regs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMarca_Regs.Designer.cs">
+      <DependentUpon>FrmMarca_Regs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModelo.Designer.cs">
+      <DependentUpon>FrmModelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo.Designer.cs">
+      <DependentUpon>FrmCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCliente.Designer.cs">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModelo_Regs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModelo_Regs.Designer.cs">
+      <DependentUpon>frmModelo_Regs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAutomovel.resx">
+      <DependentUpon>FrmAutomovel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutomovel_Regs.resx">
+      <DependentUpon>FrmAutomovel_Regs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo.resx">
+      <DependentUpon>FrmCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargo_Regs.resx">
+      <DependentUpon>FrmCargo_Regs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCliente.resx">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCliente_Regs.resx">
+      <DependentUpon>FrmCliente_Regs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFuncionario.resx">
+      <DependentUpon>FrmFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFuncionario_Regs.resx">
+      <DependentUpon>FrmFuncionario_Regs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLocacao.resx">
+      <DependentUpon>FrmLocacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLocacao_Regs.resx">
+      <DependentUpon>FrmLocacao_Regs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMarca.resx">
+      <DependentUpon>FrmMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMarca_Regs.resx">
+      <DependentUpon>FrmMarca_Regs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModelo.resx">
+      <DependentUpon>FrmModelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModelo_Regs.resx">
+      <DependentUpon>frmModelo_Regs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftModelo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftMala1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftMarca1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftFuncionario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftMoney1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftPesssoa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftCarro1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftCasa3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftLogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftDesligar1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
